@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieport" content="width=device-width">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            border-radius: 5px;
+        }
+        div.Menu1{width: 100px}
+        div.Menu1> div{ background: yellow; border: solid green}
+        div.Menu2{ width: 99px}
+        div.Menu2> div{ background: chartreuse; border: darkgreen}
+        div.Menu1>div:hover div.Menu2{ display: block; position: absolute }
+        @media all and( width: 600px) {
+            div.Menu1{width: 100px}
+            div.Menu1> div{ background: yellow; border: solid green}
+            div.Menu2{ width: 99px}
+            div.Menu2> div{ background: chartreuse; border: darkgreen}
+            div.Menu1>div:hover div.Menu2{ display: block; position: absolute }
+        }
+    </style>
+</head>
+
+<body>
+<div class="Menu1">
+ <div> Monday
+    <div class="Menu2">
+    <div> Breakfast</div>
+        <div> Lunch </div>
+        <div> Dinner</div>
+    </div>
+</div>
+</div>
+<div class="Menu1">
+    <div> Tuesday
+        <div class="Menu2">
+            <div> Breakfast</div>
+            <div> Lunch </div>
+            <div> Dinner</div>
+        </div>
+    </div>
+</div>
+<div class="Menu1">
+    <div> Wednesday
+        <div class="Menu2">
+            <div> Breakfast</div>
+            <div> Lunch </div>
+            <div> Dinner</div>
+        </div>
+    </div>
+    <div class="Menu1">
+        <div> Thursday
+            <div class="Menu2">
+                <div> Breakfast</div>
+                <div> Lunch </div>
+                <div> Dinner</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Menu1">
+    <div> Friday
+        <div class="Menu2">
+            <div> Breakfast</div>
+            <div> Lunch </div>
+            <div> Dinner</div>
+        </div>
+    </div>
+</div>
+<div class="Menu1">
+    <div> Saturday
+        <div class="Menu2">
+            <div> Breakfast</div>
+            <div> Lunch </div>
+            <div> Dinner</div>
+        </div>
+    </div>
+</div>
+<div class="Menu1">
+    <div> Sunday
+        <div class="Menu2">
+            <div> Breakfast</div>
+            <div> Lunch </div>
+            <div> Dinner</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
